@@ -1,447 +1,713 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+<html lang="en">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4GW9QPZR9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-V4GW9QPZR9');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shruthi R | Software Engineer</title>
+    <meta name="description" content="Shruthi R - Software Engineer at Microsoft Xbox. Portfolio showcasing software engineering projects and experience.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/professional.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">Shruthi R.</a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">What I've Built</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+            
+            <div class="nav-social">
+                <a href="https://github.com/shr100" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shr-r/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-	To setup localhost on Mac and check changes locally, navigate to the cloned repo and 
-	python3 -m http.server
-	Open up localhost:8000 on a browser
--->
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V4GW9QPZR9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global Particle Background -->
+    <canvas id="particleCanvas"></canvas>
 
-  gtag('config', 'G-V4GW9QPZR9');
-</script>
-		
-		<title>Shruthi's portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-label">Welcome to my portfolio</span>
+                <h1 class="hero-title">Hi, I'm <span>Shruthi!</span></h1>
+                <p class="hero-subtitle">Software Engineer @ Microsoft</p>
+                <div class="hero-buttons">
+                    <a href="#experience" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> View Experience
+                    </a>
+                    <a href="files/resume.pdf" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/prof.jpg" alt="Shruthi R - Software Engineer">
+            </div>
+        </div>
+    </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-intro">
+                    <p>
+                        I'm a software engineer who gets genuinely excited about building technology that matters. Right now, I'm at Xbox working across a variety of cool projects; one such example being an artificial intelligence assistant for gaming that over 70% of users tried within a day of launch (still pinching myself about that one). Before gaming, I spent time making online spaces safer through intelligent moderation systems. Prior to that, I helped build cognitive health tools that can detect early signs of Alzheimer's up to 3 years before traditional methods.
+                    </p>
+                    <p>
+                        What drives me? The intersection of complex technical challenges and real human impact. No seriously, whether it's reducing a gamer's frustration, protecting someone from online harm, or giving a family more time with a loved one, that's the work that gets me out of bed. When I'm not coding, you'll probably find me lost in a book (yes, I'm that person who insists books are always better than movies).
+                    </p>
+                </div>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Shruthi R</h1>
-						<p>SDE-2 at Microsoft XBox</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+                <h3 style="text-align: center; margin-top: 2rem;">Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-category-tags">
+                        <h4><i class="fas fa-code"></i> Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-tags">
+                        <h4><i class="fas fa-robot"></i> ML & AI</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Scikit-Learn</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NLTK</span>
+                            <span class="skill-tag">spaCy</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-tags">
+                        <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Terraform</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-tags">
+                        <h4><i class="fas fa-database"></i> Databases</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">CosmosDB</span>
+                            <span class="skill-tag">DynamoDB</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-tags">
+                        <h4><i class="fas fa-plug"></i> APIs & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">REST</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">WebSocket</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub Copilot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Header -->
-					<header id="header">
-						<p class="logo">Shruthi</p>
-					</header>
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Work Experience</h2>
+            </div>
+            <div class="experience-timeline">
+                <!-- Microsoft Gaming AI -->
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <img src="images/microsoft.jpeg" alt="Microsoft" class="company-logo">
+                        <span class="date">Oct 2024 - Present</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Software Engineer 2, AI</h3>
+                        <p class="company">Xbox Personalization</p>
+                        <ul>
+                            <li>Led development of Game Assist, an in-game companion embedded in the Xbox Game Bar and PC app; architected the real-time context pipeline that fuses gameplay screenshots and live Xbox activity to deliver personalized, low-latency assistance, reaching 70% user adoption within 24 hours of launch.</li>
+                            <li>Built Voice Mode for hands-free, in-game support, integrating speech recognition with multimodal context so players get real-time answers without leaving gameplay, cutting troubleshooting time by ~30%.</li>
+                            <li>Engineered Highlight Reels, a background gameplay-capture system for the ROG Xbox Ally X that uses computer vision and gameplay signals to auto-detect standout moments and assemble shareable reels at session end, shipped to Xbox Insiders as Game Highlights (Preview).</li>
+                        </ul>
+                    </div>
+                </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Content</a></li>
-							<!-- <li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li> -->
-						</ul>
-						<ul class="icons">
-							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-							<li><a href="https://github.com/shr100" class="icon brands fa-github"><span class="label">Github</span></a></li> 
-							<li><a href="https://www.linkedin.com/in/shr-r/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						</ul>
-					</nav>
+                <!-- Microsoft Trust and Safety -->
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <img src="images/microsoft.jpeg" alt="Microsoft" class="company-logo">
+                        <span class="date">Aug 2022 - Sept 2024</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Software Engineer 2</h3>
+                        <p class="company">Xbox Trust and Safety</p>
+                        <ul>
+                            <li>Architected and deployed Small Language Models (SLM) to enable proactive content moderation, increasing detection accuracy by 65% across Xbox platforms.</li>
+                            <li>Enhanced reactive moderation workflows, streamlining internal tools to boost efficiency by 18%, reducing human moderation workload.</li>
+                            <li>Implemented proactive moderation strategies, mitigating spam and fraud threats by nearly 40%, safeguarding Xbox users.</li>
+                        </ul>
+                    </div>
+                </div>
 
-				<!-- Main -->
-					<div id="main">
+                <!-- Neurotrack -->
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <img src="images/neurotrack.jpeg" alt="Neurotrack" class="company-logo">
+                        <span class="date">May 2021 - July 2022</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Software Engineer</h3>
+                        <p class="company">Neurotrack Technologies Inc.</p>
+                        <ul>
+                            <li>Engineered non-invasive cognitive tests leveraging AWS Microservices, improving early Alzheimer's and dementia detection accuracy, and identifying onset up to 3 years earlier than traditional methods.</li>
+                            <li>Pioneered a coaching service to enhance cognitive health, resulting in a 15% improvement in client cognitive scores, positively impacting 100+ clients within the first 3 months.</li>
+                            <li>Optimized backend infrastructure, improving scalability and reducing server response time by 25%, ensuring seamless user experiences.</li>
+                        </ul>
+                    </div>
+                </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<!-- <span class="date">April 25, 2017</span> -->
-									<h3>About me</h3>
-									<p>I'm Shruthi, a graduate from the University of Alberta. My research interests lie primarily in Data Science and Software Development, even though I've dabbled quite a bit in other branches of Computer Science as well. My technical expertise can be fathomed by peeking at my resume (can be found below), while the fun side of me can only be deduced by a talk with me! I savor books and love to debate anyday on how books are definitely better than movies. Other than books, I enjoy playing football and board games in my spare time.
-									</p>
-								</header>
-								<a href="#"><img src="images/prof.jpeg" alt="" width = "600" height = "500" /></a>
-								<!-- <ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul> -->
-							</article>
+                <!-- Mitacs -->
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <img src="images/mitacs.jpeg" alt="Mitacs" class="company-logo">
+                        <span class="date">Mar 2021 - May 2021</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Research Engineer (Mitacs Accelerate)</h3>
+                        <p class="company">Ethically Aligned AI</p>
+                        <ul>
+                            <li>Analyzed literature across different domains in order to produce proof-of-concept for validating ethics in AI.</li>
+                            <li>Iterated proof-of-concept upon feedback from a diverse class of businesses to identify specific business needs for building fair machine learning systems.</li>
+                            <li>Strategized the implementation of a common tool for validating ethics.</li>
+                        </ul>
+                    </div>
+                </div>
 
-						<!--Education -->
-						<h2 style ="text-align: center">EDUCATION</h2>
-							<article>
-								<p><b>M.Sc Computing Science : </b>University of Alberta, Edmonton<br />
-								<b>Graduated : </b>Spring 2021 <br />
-								<b>Graduate coursework:</b> Introduction to Machine Learning, Introduction to NLP, Interactive Machine Learning, Internet of Things, Intelligent User Interfaces, Privacy in Machine Learning.
-								</p>
-								
-								<p><b>B.E Computer Science : </b>College of Engineering, Guindy, Anna University<br />
-								<b>Graduated : </b>Spring 2019 <br />
-								<b>Undergraduate coursework:</b> Parallel and Distributed Systems, Algebra and Number Theory, Data Structures and Algorithms, Calculus I and II, Software Engineering, Operating Systems, Database Management, Web programming, Information Retrieval, Computer Vision
-								</p>
-								
-							</article>
-						
+                <!-- Famwork -->
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <img src="images/famwork.jpeg" alt="Famwork" class="company-logo">
+                        <span class="date">Dec 2020 - May 2021</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Software Engineer</h3>
+                        <p class="company">Famwork</p>
+                        <ul>
+                            <li>Leveraged statistical and ML algorithmic techniques for integrating machine learning models into electronic health record systems and built a chatbot for the patient portal.</li>
+                            <li>Spearheaded the automation of the telehealth system for the minimum viable product, that was used to forecast diseases the patient was susceptible to acquire, based on his/her medical history.</li>
+                            <li>Strategized the improvement of customer satisfaction by 50%, by automating the EHR system.</li>
+                        </ul>
+                    </div>
+                </div>
 
-						<!--Work ex -->
-						<h2 style ="text-align: center">WORK EXPERIENCE</h2>
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">August 2022-Present</span>
-										<h2>SDE-2 at Microsoft XBox</h2>
-									</header>
-									<p><center><img src="images/microsoft.jpeg" height="300" alt="" /></center></p>
-									<ul>
-										<li>Streamlined the moderation system for Microsoft Xbox by creating and updating internal tools for human moderators.</li>
-										<li>Optimized the reactive moderation experience by 18% by integrating and supporting existing internal tools that enable human moderation.</li>
-										<li>Deployed proactive moderation of content for Xbox and reduced security and privacy threats by nearly 40%.</li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">May 2021-July 2022</span>
-										<h2>Software Engineer at Neurotrack Technologies Inc.</h2>
-									</header>
-									<p class="image fit"><img src="images/neurotrack.jpeg" height="300" alt="" /></p>
-									<ul><li>As a Backend Engineer, worked on building non-invasive cognitive tests for the early detection of Alzheimer's and dementia.</li>
-<li>Strategized the design of a coaching service to help customers improve their cognitive health, used by 100+ clients within the first 3 months.</li></ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">March 2021 - May 2021</span>
-										<h2>Mitacs Accelerate Intern at Ethically Aligned AI</h2>
-									</header>
-									<p class="image fit"><img src="images/mitacs.jpeg" height="400" alt="" /></p>
-									<ul><li>Analyzed literature across different domains in order to produce proof-of-concept for validating ethics.</li> 
-<li>Collaborated with a diverse class of businesses to identify specific business needs for building fair machine learning systems.</li> 
-<li>Strategized the implementation of a common tool for validating ethics.</li></ul>
-									
-								</article>
-								<article>
-									<header>
-										<span class="date">Dec 2020 - May 2021</span>
-										<h2>Data Scientist Intern (Research), Famwork</h2>
-									</header>
-									<p class="image fit"><img src="images/famwork.jpeg" height="400" alt="" /></p>
-									<ul><li>Leveraged statistical and ML algorithmic techniques for integrating machine learning models into electronic health record systems and built a chatbot for the patient portal.</li> 
-<li>Spearheaded the automation of the telehealth system for the minimum viable product, that was used to forecast diseases the patient was susceptible to acquire, based on his/her medical history.</li> 
-<li>Strategized the improvement of customer satisfaction by 50%, by automating the EHR system.</li></ul>
-									
-								</article>
-								<article>
-									<header>
-										<span class="date">Sep 2019 - May 2021(expected)</span>
-										<h2>Head Teaching Assistant, University of Alberta</h2>
-									</header>
-									<p class="image fit"><img src="images/ua.png" alt="" /></p>
-									<p><b>Courses:</b> Introduction to Foundations of Computing, Computer Networks, Graduate teaching assistant training.<br>Promoted to head teaching assistant in Spring 2020, prepared graduate TA training material and supervised 10+ TA’s.</p>
-								
-								</article>
-								<article>
-									<header>
-										<span class="date">Summer 2018</span>
-										<h2>Software Engineer Intern, Makesto Infotech Private Limited</h2>
-									</header>
-									<p class="image fit"><img src="images/maskup.png" alt="" /></p>
-									<ul><li>Launched a JavaScript plugin, which was used internally for supporting 3D models in the GL Transmission Format.</li>
-<li>Established a framework for achieving dimensionality reduction of 3D models by 30%, with minimal data loss, in  Python.</li>
-<li>Collaborated with a team of 10+ people to maximize retail sales at Target by 80%, incorporating 3D modeling.</li></ul>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<span class="date">Summer 2017</span>
-										<h2>Software Engineer Intern,  L&T Technology Services</h2>
-									</header>
-									<p class="image fit"><img src="images/lt.jpeg" alt="" /></p>
-									<ul><li>Utilized agile practices and developed the login, sign-up, and deposit pages for the company using HTML5, CSS3, and JavaScript.</li>
-<li>Participated in code reviews and contributed to building a complex, scalable software system.</li> 
-<li>Perfected the existing system by improving security against SQL injection attacks by almost 70%.</li></ul>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-							</section>
+                <!-- University of Alberta -->
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <img src="images/ua.png" alt="University of Alberta" class="company-logo">
+                        <span class="date">Sep 2019 - May 2021</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Head Teaching Assistant</h3>
+                        <p class="company">University of Alberta</p>
+                        <ul>
+                            <li><strong>Courses:</strong> Introduction to Foundations of Computing, Computer Networks, Graduate teaching assistant training.</li>
+                            <li>Promoted to head teaching assistant in Spring 2020, prepared graduate TA training material and supervised 10+ TA's.</li>
+                        </ul>
+                    </div>
+                </div>
 
-						
+                <!-- Makesto -->
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <img src="images/maskup.png" alt="Makesto" class="company-logo">
+                        <span class="date">Summer 2018</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Software Engineer</h3>
+                        <p class="company">Makesto Infotech Private Limited</p>
+                        <ul>
+                            <li>Launched a JavaScript plugin, which was used internally for supporting 3D models in the GL Transmission Format.</li>
+                            <li>Established a framework for achieving dimensionality reduction of 3D models by 30%, with minimal data loss, in Python.</li>
+                            <li>Collaborated with a team of 10+ people to maximize retail sales at Target by 80%, incorporating 3D modeling.</li>
+                        </ul>
+                    </div>
+                </div>
 
-						<!-- Posts -->
-						<h2 style ="text-align: center">LIST OF PROJECTS</h2>
-							<section class="posts">
-								<article>
-									<header>
-										<h2>STOCK MARKET PREDICTOR</h2>
-									</header>
-									<p class="image fit"><img src="images/stock.jpeg" alt="" /></p>
-									<p>A machine learning/deep learning project with a web interface used to predict the open price of a particular stock on a given day. Dataset created by scraping Yahoo finance. Created using Python.<br />
-									<b> USE : </b> Used to predict the open price for a stock on a given day. Useful to set the highest price (Limit Buy) to buy a stock.</p>
+                <!-- L&T -->
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <img src="images/lt.jpeg" alt="L&T Technology Services" class="company-logo">
+                        <span class="date">Summer 2017</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Software Engineer</h3>
+                        <p class="company">L&T Technology Services</p>
+                        <ul>
+                            <li>Utilized agile practices and developed the login, sign-up, and deposit pages for the company using HTML5, CSS3, and JavaScript.</li>
+                            <li>Participated in code reviews and contributed to building a complex, scalable software system.</li>
+                            <li>Perfected the existing system by improving security against SQL injection attacks by almost 70%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-								</article>
-								<article>
-									<header>
-										<h2>HYBRID UI - TOWARDS ACCESSIBLE COMPUTING</h2>
-									</header>
-									<p class="image fit"><img src="images/accessible.jpeg" alt="" /></p>
-									<p>A chrome extension for accessible computing. Improved user accessibility by 65%. Created using Python and tested on a control population of 30 people.<br />
-									<b> USE : </b> Used to improve browser accessibility for people with low vision.</p>
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>M.Sc Computing Science</h3>
+                    <p class="school">University of Alberta, Edmonton</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>B.E Computer Science</h3>
+                    <p class="school">College of Engineering, Guindy, Anna University</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2>RELATION EXTRACTION IN KNOWLEDGE BASES - KNOWLEDGE GRAPHS</h2>
-									</header>
-									<p class="image fit"><img src="images/696_project.png" alt="" /></p>
-									<p>A Natural Language Processing based project that focuses on relation extraction between a pair of entities in Knowledge Bases using a clustering algorithm. Created using Python and tested on KnowledgeNet relations.<br />
-									<b> USE : </b> Can be used to identify and predict relations between a pair of entities, that can improve search results in Knowledge Bases.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2>Visual Aid system - Patented</h2>
-									</header>
-									<p class="image fit"><img src="images/braille.jpeg" alt="" /></p>
-									<p>A Visual Aid storytelling system used in story telling sessions for visually challenged children.
-									Consisted of an interactive computer and sensor system and when scenes from stories were fed to the computer, the sensors rose to depict the scene.
-									The visually challenged children could also place their hands on the sensors so as to feel the scene unfolding through their hands.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2>NOISE ELIMINATOR FOR ACTIVE LEARNING - NEAL</h2>
-									</header>
-									<p class="image fit"><img src="images/al.png" alt="" /></p>
-									<p>An Interactive Machine Learning based algorithm that helps produce automated systems that provide highly accurate predictions, with a low number of training instances. Improved over previous systems by 10%.<br />
-									<b> USE : </b> Can be used to improve predictions of any automated system and needs only a small subset of labelled data to produce stellar results.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2>EARLY DETECTION OF DEPRESSION USING LINGUISTIC METADATA</h2>
-									</header>
-									<p class="image fit"><img src="images/depression.jpeg" alt="" /></p>
-									<p>A Machine Learning based project that detects the early onset of depression using the RSDD dataset and processed using Natural Language Processing.
-									Created using Python and the Reddit Self-reported Depression Diagnosis (RSDD) dataset. Achieved an accuracy of 99%.<br />
-					
-									<b> USE : </b> Can be used to detect depression in individuals and the diagnosed participants can be urged to seek professional help.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2>Platform to assess geriatric frailty using smart wearable devices – IoT</h2>
-									</header>
-									<p class="image fit"><img src="images/frail.jpeg" alt="" /></p>
-									<p>An Internet of Things based system that assesses geriatric frailty using four smart devices which can be monitored from afar. Based on a smart condo environment.<br />
-									<b> USE : </b> Can be used to detect and asssess frailty in individuals in real time.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2>EARLY DETECTION AND PREDICTION OF LUNG CANCER</h2>
-									</header>
-									<p class="image fit"><img src="images/lung_cancer.jpeg" alt="" /></p>
-									<p>A Machine Learning based project which focused on detecting and predicting lung cancer by automatically analyzing CT scans. Created using Python.<br />
-									<b> USE : </b> Can be used to detect lung cancer, given a set of CT scans of the lungs.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2>3D MODELS WORDPRESS PLUGIN</h2>
-									</header>
-									<p class="image fit"><img src="images/plugin.png" alt="" /></p>
-									<p>A WordPress plugin to aid the upload of 3D models in the GLTF format, using the URL and file name.<br />
-									<b> USE : </b> Can be used to render 3D models immediately on the web, with Lilliputian loading times.</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2>Memotion Analysis - SemEval 2020</h2>
-									</header>
-									<p class="image fit"><img src="images/meme.jpeg" alt="" /></p>
-									<p>Memotion (Meme + Emotion) Analysis is the task of analyzing sentiments from memes, typically posted in various social platforms, and classifying them into positive and negative sentiments. This system represents an approach to extract and analyze embedded texts of a meme from a released data set (training and trial) of a SemEval-2020 task titled as "Memotion Analysis".</p>
-									<!-- <ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul> -->
-								</article>
-								
-							</section>
-							
-						<!--Teaching Experience -->
-						<h2 style ="text-align: center">Teaching Experience</h2>
-							<article>
-							<h3>LIST OF SUBJECTS</h3>
-							<ul>
-								<li>INTRODUCTION TO FOUNDATIONS OF COMPUTING - Fall 2019, Spring 2020</li>
-								<li>COMPUTER NETWORKS - Winter 2020</li>
-								<li>DEVELOPING GRADUATE STUDENT TRAINING MATERIAL - Summer 2020</li>
-							</ul>
-							<h3>SUMMARY OF DUTIES</h3>
-							<ol>
-								<li>Helping out students as and when they had questions</li>
-								<li>Conducting office hours frequently</li>
-								<li>Grading assignments and exams</li>
-								<li>Grading labs</li>
-								<li>Formulating solutions for the assignments</li>
-								<li>Developing training material for graduate students</li>
-							</ol>
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>What I've Built</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Game Assist -->
+                <div class="project-card">
+                    <img src="images/game-assist.jpg" alt="Game Assist" class="project-image">
+                    <div class="project-content">
+                        <h3>Game Assist</h3>
+                        <p>Built the ultimate gaming sidekick for Xbox, an AI companion that knows what you're playing and understands your Xbox activity to provide personalized help. I developed features including Voice Mode for hands-free assistance during gameplay, screenshot-based context awareness for real-time support, and proactive coaching. Drove adoption by over 70% of users within a day of launch.</p>
+                        <div class="project-use">
+                            <strong>LEARN MORE:</strong>                             <a href="https://www.xbox.com/en-US/gaming-copilot" target="_blank">Xbox Game Assist</a> | <a href="https://news.xbox.com/en-us/2025/08/06/gaming-copilot-beta-begins-rolling-out-to-xbox-insiders-on-game-bar-today/" target="_blank">Xbox Wire Announcement</a>
+                        </div>
+                    </div>
+                </div>
 
-							</article>
-						
-						<!--Part-time Experience -->
-						<h2 style ="text-align: center">Part-time Experience</h2>
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">Nov 2020 - Present</span>
-										<h2>Retail Store Associate, Dollarama</h2>
-									</header>
-									<p class="image fit"><img src="images/dol.jpeg" alt="" /></p>
-									<p>Responsible for stacking products on their respective shelves.Performed billing and collected payments from customers with respect to their purchase. Responsible for unloading and checking inventory. Responsible for Customer service. Assisted customers with their queries and concerns about returns and products.</p>
-									
-								</article>
+                                            <!-- Highlight Reels -->
+                                            <div class="project-card">
+                                                <img src="images/highlight-reels.jpg" alt="Highlight Reels" class="project-image">
+                                                <div class="project-content">
+                                                    <h3>Highlight Reels</h3>
+                                                    <p>Built this gameplay capture feature for the ROG Xbox Ally X, enabling players to automatically clip their standout gaming moments, like epic boss battles and victories, into short replay clips to share with friends. I engineered it on top of Game Assist to capture clips in the background during play and assemble a highlight reel at the end of each session, requiring no additional downloads and never interrupting gameplay. Shipped to Xbox Insiders as Game Highlights (Preview) in the Xbox PC app.</p>
+                                                    <div class="project-use">
+                                                        <strong>LEARN MORE:</strong> <a href="https://news.xbox.com/en-us/2026/03/02/xbox-insiders-try-highlight-reels-on-the-rog-xbox-ally-x-starting-today/" target="_blank">Xbox Wire Announcement</a>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-								<article>
-									<header>
-										<span class="date">July 2020 - Oct 2020</span>
-										<h2>Retail Sales Associate, IKEA</h2>
-									</header>
-									<p class="image fit"><img src="images/ikea.jpeg" alt="" /></p>
-									<p>Capitalized excellent customer service by supplying them with information on a broad range of enquiries. Maximised sales substantiated by processing a large amount of sales transactions per day. Demonstrated computer skills by helping customers with the delivery system. Collaborated with co-workers to build new IKEA products for displays.</p>
-									
-								</article>
+                                            <!-- Expense Tracker -->
+                <div class="project-card">
+                    <img src="images/expense.png" alt="Expense Tracker" class="project-image">
+                    <div class="project-content">
+                        <h3>Expense Tracker</h3>
+                        <p>Built a full-stack personal finance app that turns messy bank and credit-card statements into clear spending insights. I wrote custom PDF parsers that handle multiple bank formats (Amex, Scotiabank, Wealthsimple, Rogers Bank), an auto-categorization engine driven by layered user and global keyword rules, and interactive dashboards for monthly and category-level spending trends. Built with Python and Streamlit, backed by Supabase (Postgres) with user authentication and per-user data isolation.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Upload bank and credit-card statement PDFs to automatically parse, categorize, and visualize personal spending trends over time.
+                        </div>
+                    </div>
+                </div>
 
-							</section>
-							<article>
+                <!-- Stock Market Predictor -->
+                <div class="project-card">
+                    <img src="images/stock.jpeg" alt="Stock Market Predictor" class="project-image">
+                    <div class="project-content">
+                        <h3>Stock Market Predictor</h3>
+                        <p>A machine learning/deep learning project with a web interface used to predict the open price of a particular stock on a given day. Dataset created by scraping Yahoo finance. Created using Python.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Used to predict the open price for a stock on a given day. Useful to set the highest price (Limit Buy) to buy a stock.
+                        </div>
+                    </div>
+                </div>
 
-							<h3><center>SPECIAL NOTE</h3>
-							<p>
-								<em>Working alongside studying taught me time management along with a lot of unconventional skills, that don't usually come along with a traditional internship/industry experience. Communication was one key expertise acquired while working, along with juggling between school and my personal life. I also learned how to sell a product effectively, and afterall, don't we deal with clients and customers on a regular basis, no matter what company we work for?  </em>
-							</p>
-							
+                <!-- Hybrid UI -->
+                <div class="project-card">
+                    <img src="images/accessible.jpeg" alt="Hybrid UI" class="project-image">
+                    <div class="project-content">
+                        <h3>Hybrid UI - Towards Accessible Computing</h3>
+                        <p>A chrome extension for accessible computing. Improved user accessibility by 65%. Created using Python and tested on a control population of 30 people.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Used to improve browser accessibility for people with low vision.
+                        </div>
+                    </div>
+                </div>
 
-							</article>
+                <!-- Knowledge Graphs -->
+                <div class="project-card">
+                    <img src="images/696_project.png" alt="Knowledge Graphs" class="project-image">
+                    <div class="project-content">
+                        <h3>Relation Extraction in Knowledge Bases</h3>
+                        <p>A Natural Language Processing based project that focuses on relation extraction between a pair of entities in Knowledge Bases using a clustering algorithm. Created using Python and tested on KnowledgeNet relations.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Can be used to identify and predict relations between a pair of entities, that can improve search results in Knowledge Bases.
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Footer -->
-							<footer>
-								<h2>Resume</h2>
-								<button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="window.open('files/resume.pdf')">
-     							 <i class="fa fa-download"></i> Download Resume
-   								 </button>
-								<!-- <div class="pagination">
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div> -->
-							</footer>
+                <!-- Visual Aid System -->
+                <div class="project-card">
+                    <img src="images/braille.jpeg" alt="Visual Aid System" class="project-image">
+                    <div class="project-content">
+                        <h3>Visual Aid System - Patented</h3>
+                        <p>A Visual Aid storytelling system used in story telling sessions for visually challenged children. Consisted of an interactive computer and sensor system and when scenes from stories were fed to the computer, the sensors rose to depict the scene.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Enables visually challenged children to feel stories unfolding through their hands.
+                        </div>
+                    </div>
+                </div>
 
-					</div>
+                <!-- NEAL -->
+                <div class="project-card">
+                    <img src="images/al.png" alt="NEAL" class="project-image">
+                    <div class="project-content">
+                        <h3>Noise Eliminator for Active Learning - NEAL</h3>
+                        <p>An Interactive Machine Learning based algorithm that helps produce automated systems that provide highly accurate predictions, with a low number of training instances. Improved over previous systems by 10%.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Can be used to improve predictions of any automated system and needs only a small subset of labelled data to produce stellar results.
+                        </div>
+                    </div>
+                </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<!-- <section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section> -->
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>University of Alberta<br />
-									Department of Computing Science<br />
-									ATH-113<br />
-									116 St. and 85 Ave<br />
-									Edmonton, Alberta T6G 2R3</p>
-							</section>
-							<!-- <section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section> -->
-							<section>
-								<h3>Email</h3>
-								<p>shruthi@ualberta.ca</p>
-							</section>
-							<!-- <section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section> -->
-						</section>
-					</footer>
+                <!-- Depression Detection -->
+                <div class="project-card">
+                    <img src="images/depression.jpeg" alt="Depression Detection" class="project-image">
+                    <div class="project-content">
+                        <h3>Early Detection of Depression Using Linguistic Metadata</h3>
+                        <p>A Machine Learning based project that detects the early onset of depression using the RSDD dataset and processed using Natural Language Processing. Achieved an accuracy of 99%.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Can be used to detect depression in individuals and the diagnosed participants can be urged to seek professional help.
+                        </div>
+                    </div>
+                </div>
 
-				<!-- Copyright -->
-						<!-- <div id="copyright">
-							<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-						</div> -->
+                <!-- IoT Frailty -->
+                <div class="project-card">
+                    <img src="images/frail.jpeg" alt="IoT Frailty Assessment" class="project-image">
+                    <div class="project-content">
+                        <h3>Platform to Assess Geriatric Frailty Using Smart Wearable Devices</h3>
+                        <p>An Internet of Things based system that assesses geriatric frailty using four smart devices which can be monitored from afar. Based on a smart condo environment and developed for Withings.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Can be used to detect and assess frailty in individuals in real time.
+                        </div>
+                    </div>
+                </div>
 
-			</div>
+                <!-- Lung Cancer -->
+                <div class="project-card">
+                    <img src="images/lung_cancer.jpeg" alt="Lung Cancer Detection" class="project-image">
+                    <div class="project-content">
+                        <h3>Early Detection and Prediction of Lung Cancer</h3>
+                        <p>A Machine Learning based project which focused on detecting and predicting lung cancer by automatically analyzing CT scans. Created using Python.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Can be used to detect lung cancer, given a set of CT scans of the lungs.
+                        </div>
+                    </div>
+                </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <!-- WordPress Plugin -->
+                <div class="project-card">
+                    <img src="images/plugin.png" alt="WordPress Plugin" class="project-image">
+                    <div class="project-content">
+                        <h3>3D Models WordPress Plugin</h3>
+                        <p>A WordPress plugin to aid the upload of 3D models in the GLTF format, using the URL and file name.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Can be used to render 3D models immediately on the web, with Lilliputian loading times.
+                        </div>
+                    </div>
+                </div>
 
-	</body>
+                <!-- Memotion Analysis -->
+                <div class="project-card">
+                    <img src="images/meme.jpeg" alt="Memotion Analysis" class="project-image">
+                    <div class="project-content">
+                        <h3>Memotion Analysis - SemEval 2020</h3>
+                        <p>Memotion (Meme + Emotion) Analysis is the task of analyzing sentiments from memes, typically posted in various social platforms, and classifying them into positive and negative sentiments. This system represents an approach to extract and analyze embedded texts of a meme from a released data set of a SemEval-2020 task.</p>
+                        <div class="project-use">
+                            <strong>USE:</strong> Can be used for sentiment analysis of memes across social media platforms.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume-section" id="resume">
+        <div class="container">
+            <h2>Want to know more?</h2>
+            <p>Like a one-pager? Here's my resume. Let's connect!</p>
+            <a href="files/resume.pdf" class="btn btn-primary" target="_blank">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Shruthi R</h4>
+                <p>Software Engineer at Microsoft Xbox<br>Graduate from University of Alberta</p>
+                <div class="footer-social">
+                    <a href="https://github.com/shr100" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shr-r/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>
+                    <a href="mailto:rshruthi100@gmail.com">rshruthi100@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shruthi R. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile navigation toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+
+        // Active navigation link on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Particle Animation - Full Page
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        resizeCanvas();
+        
+        const particles = [];
+        const particleCount = 100;
+        const connectionDistance = 180;
+        
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.radius = Math.random() * 2 + 1;
+            }
+            
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+            
+            draw() {
+                const isDark = html.getAttribute('data-theme') === 'dark';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = isDark 
+                    ? 'rgba(96, 165, 250, 0.8)' 
+                    : 'rgba(37, 99, 235, 0.6)';
+                ctx.fill();
+            }
+        }
+        
+        // Initialize particles
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+        
+        function drawConnections() {
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < connectionDistance) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        const opacity = (1 - distance / connectionDistance) * 0.5;
+                        ctx.strokeStyle = isDark 
+                            ? `rgba(96, 165, 250, ${opacity})` 
+                            : `rgba(37, 99, 235, ${opacity})`;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            
+            drawConnections();
+            requestAnimationFrame(animate);
+        }
+        
+        animate();
+        
+        // Resize handler with debounce
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                resizeCanvas();
+                // Redistribute particles on resize
+                particles.forEach(particle => {
+                    if (particle.x > canvas.width) particle.x = Math.random() * canvas.width;
+                    if (particle.y > canvas.height) particle.y = Math.random() * canvas.height;
+                });
+            }, 100);
+        });
+        
+        // Update canvas height when content changes (for dynamic content)
+        const resizeObserver = new ResizeObserver(() => {
+            resizeCanvas();
+        });
+        resizeObserver.observe(document.body);
+    </script>
+</body>
 </html>
